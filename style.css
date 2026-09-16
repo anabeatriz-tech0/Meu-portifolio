@@ -1,0 +1,2117 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #292426;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   CORES
+========================= */
+
+:root {
+    --vinho: #720019;
+    --vinho-escuro: #500011;
+    --vinho-claro: #9a3347;
+    --branco: #ffffff;
+    --cinza-claro: #faf7f5;
+    --borda: #eadfe0;
+    --texto: #292426;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    height: 76px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid var(--borda);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+/* LOGO */
+
+.logo {
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    color: var(--vinho);
+}
+
+
+/* MENU */
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+nav a {
+    font-size: 13px;
+
+    padding: 28px 0 10px;
+
+    color: #292426;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.ativo {
+    color: var(--vinho);
+
+    border-bottom-color: var(--vinho);
+}
+
+
+/* BOTÃO CV */
+
+.btn-cv {
+    background-color: var(--vinho);
+
+    color: white;
+
+    padding: 13px 24px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-cv:hover {
+    background-color: var(--vinho-escuro);
+}
+
+
+/* =========================
+   ÁREA INICIAL
+========================= */
+
+.inicio {
+    max-width: 1150px;
+
+    min-height: 520px;
+
+    margin: auto;
+
+    padding: 55px 20px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 480px;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* TEXTO */
+
+.texto-inicio {
+    padding-left: 10px;
+}
+
+.saudacao {
+    color: var(--vinho);
+
+    font-size: 16px;
+
+    letter-spacing: 3px;
+}
+
+.texto-inicio h1 {
+    font-family: Georgia, serif;
+
+    font-size: 78px;
+
+    line-height: 1;
+
+    color: var(--vinho);
+
+    margin-top: 18px;
+
+    margin-bottom: 12px;
+}
+
+.texto-inicio h2 {
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    font-weight: normal;
+}
+
+
+/* LINHA DECORATIVA */
+
+.linha {
+    width: 50px;
+
+    height: 3px;
+
+    background-color: var(--vinho);
+
+    margin: 25px 0;
+}
+
+
+/* DESCRIÇÃO */
+
+.texto-inicio p {
+    max-width: 500px;
+
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.botoes {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 28px;
+}
+
+.btn-principal,
+.btn-secundario {
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* BOTÃO VINHO */
+
+.btn-principal {
+    background-color: var(--vinho);
+
+    color: white;
+
+    border: 1px solid var(--vinho);
+}
+
+.btn-principal:hover {
+    background-color: var(--vinho-escuro);
+}
+
+
+/* BOTÃO BRANCO */
+
+.btn-secundario {
+    background-color: white;
+
+    color: var(--vinho);
+
+    border: 1px solid var(--vinho);
+}
+
+.btn-secundario:hover {
+    background-color: #faf3f4;
+}
+
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.redes {
+    display: flex;
+
+    gap: 22px;
+
+    margin-top: 30px;
+}
+
+.redes a {
+    color: var(--vinho);
+
+    font-size: 25px;
+
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: var(--vinho-claro);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto-inicio {
+    height: 490px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.foto-inicio img {
+    width: 390px;
+
+    height: 460px;
+
+    object-fit: cover;
+
+    border-radius: 200px 200px 25px 25px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* DETALHE VINHO AO LADO DA FOTO */
+
+.detalhe-vinho {
+    position: absolute;
+
+    right: 15px;
+
+    bottom: 15px;
+
+    width: 65px;
+
+    height: 160px;
+
+    background-color: var(--vinho);
+
+    z-index: 1;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    max-width: 1150px;
+
+    margin: 10px auto 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    border: 1px solid var(--borda);
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    background-color: var(--cinza-claro);
+
+    border-color: #d8c4c7;
+}
+
+
+/* ÍCONE */
+
+.icone {
+    min-width: 55px;
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--vinho);
+
+    color: white;
+
+    font-size: 25px;
+}
+
+
+/* TEXTO DOS CARDS */
+
+.card h3 {
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 20px;
+
+    margin-bottom: 7px;
+}
+
+.card p {
+    color: #555;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+.card span {
+    color: var(--vinho);
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    min-height: 130px;
+
+    padding: 25px 7%;
+
+    background-color: var(--vinho);
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 12px;
+
+    font-size: 15px;
+}
+
+.tutores {
+    font-size: 14px;
+}
+
+.tutores strong {
+    font-weight: bold;
+}
+
+.redes-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 3px;
+}
+
+.redes-footer a {
+    color: white;
+
+    font-size: 21px;
+
+    transition: 0.3s;
+}
+
+.redes-footer a:hover {
+    color: #eadfe0;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 950px) {
+
+    nav {
+        gap: 15px;
+    }
+
+    .inicio {
+        grid-template-columns: 1fr 350px;
+
+        gap: 30px;
+    }
+
+    .texto-inicio h1 {
+        font-size: 60px;
+    }
+
+    .foto-inicio img {
+        width: 320px;
+
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .btn-cv {
+        display: none;
+    }
+
+    .inicio {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .texto-inicio {
+        padding: 0;
+
+        order: 2;
+    }
+
+    .foto-inicio {
+        order: 1;
+
+        height: 380px;
+    }
+
+    .foto-inicio img {
+        width: 280px;
+
+        height: 350px;
+    }
+
+    .linha {
+        margin: 20px auto;
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    .redes {
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+
+        margin-left: 6%;
+
+        margin-right: 6%;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    nav {
+        display: none;
+    }
+
+    .texto-inicio h1 {
+        font-size: 48px;
+    }
+
+    .texto-inicio h2 {
+        font-size: 20px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    .btn-principal,
+    .btn-secundario {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .foto-inicio img {
+        width: 250px;
+
+        height: 320px;
+    }
+}
+
+
+
+
+
+
+
+
+/* =========================
+   PÁGINA SOBRE MIM
+========================= */
+
+.sobre {
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 70px 30px 80px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo-pagina {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.titulo-pagina span {
+    color: var(--vinho);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.titulo-pagina h1 {
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 48px;
+
+    margin-top: 12px;
+}
+
+.linha-titulo {
+    width: 45px;
+
+    height: 3px;
+
+    background-color: var(--vinho);
+
+    margin: 18px auto 0;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.sobre-texto {
+    max-width: 780px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.sobre-texto h2 {
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+.sobre-texto p {
+    color: #555;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+.sobre-texto strong {
+    color: var(--vinho);
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.informacoes {
+    max-width: 700px;
+
+    margin: 40px auto 0;
+
+    padding-top: 30px;
+
+    border-top: 1px solid var(--borda);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.informacao {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.informacao span {
+    color: var(--vinho);
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.informacao strong {
+    color: #333;
+
+    font-size: 14px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    .sobre {
+        padding: 50px 20px 60px;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 38px;
+    }
+
+    .sobre-texto h2 {
+        font-size: 27px;
+    }
+
+    .sobre-texto p {
+        font-size: 14px;
+    }
+
+    .informacoes {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+}
+
+
+
+
+
+
+
+/* =========================
+   PÁGINA OBJETIVOS
+========================= */
+
+.objetivos {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px 80px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.objetivos .titulo-pagina {
+    margin-bottom: 55px;
+}
+
+.objetivos .titulo-pagina span {
+    color: var(--vinho);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.objetivos .titulo-pagina h1 {
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 48px;
+
+    margin-top: 12px;
+}
+
+.objetivos .linha-titulo {
+    width: 45px;
+
+    height: 3px;
+
+    background-color: var(--vinho);
+
+    margin: 18px auto;
+}
+
+.objetivos .titulo-pagina p {
+    max-width: 600px;
+
+    margin: 20px auto 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.objetivos-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+
+.objetivo-card {
+    min-height: 330px;
+
+    padding: 35px 28px;
+
+    border: 1px solid var(--borda);
+
+    background-color: white;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+
+.objetivo-card:hover {
+    border-color: var(--vinho);
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(114, 0, 25, 0.08);
+}
+
+
+/* =========================
+   NÚMERO
+========================= */
+
+.objetivo-numero {
+    color: var(--vinho);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ÍCONE
+========================= */
+
+.objetivo-icone {
+    width: 65px;
+
+    height: 65px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--vinho);
+
+    color: white;
+
+    font-size: 24px;
+}
+
+
+/* =========================
+   TÍTULO DO CARD
+========================= */
+
+.objetivo-card h2 {
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 25px;
+
+    margin: 22px 0 15px;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.objetivo-card p {
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FRASE FINAL
+========================= */
+
+.frase-objetivos {
+    max-width: 700px;
+
+    margin: 55px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    color: var(--vinho);
+}
+
+
+.frase-objetivos span {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    line-height: 1;
+}
+
+
+.frase-objetivos p {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    .objetivos-cards {
+        grid-template-columns: 1fr;
+
+        max-width: 500px;
+    }
+
+    .objetivo-card {
+        min-height: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .objetivos {
+        padding: 50px 20px 60px;
+    }
+
+    .objetivos .titulo-pagina h1 {
+        font-size: 38px;
+    }
+
+    .objetivos .titulo-pagina p {
+        font-size: 14px;
+    }
+
+    .frase-objetivos p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+/* =========================
+   PÁGINA PROJETOS
+========================= */
+
+.projetos {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 70px 30px 80px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.projetos .titulo-pagina {
+    margin-bottom: 55px;
+}
+
+.projetos .titulo-pagina span {
+    color: var(--vinho);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.projetos .titulo-pagina h1 {
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 48px;
+
+    margin-top: 12px;
+}
+
+.projetos .linha-titulo {
+    width: 45px;
+
+    height: 3px;
+
+    background-color: var(--vinho);
+
+    margin: 18px auto;
+}
+
+.projetos .titulo-pagina p {
+    max-width: 600px;
+
+    margin: 20px auto 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   LISTA
+========================= */
+
+.lista-projetos {
+    max-width: 850px;
+
+    margin: auto;
+
+    border-top: 1px solid var(--borda);
+}
+
+
+/* =========================
+   PROJETO
+========================= */
+
+.projeto {
+    min-height: 90px;
+
+    padding: 20px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    border-bottom: 1px solid var(--borda);
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+
+.projeto:hover {
+    background-color: #faf7f5;
+
+    padding-left: 35px;
+}
+
+
+/* =========================
+   NÚMERO
+========================= */
+
+.numero-projeto {
+    color: var(--vinho);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    min-width: 30px;
+}
+
+
+/* =========================
+   NOME
+========================= */
+
+.projeto h2 {
+    flex: 1;
+
+    text-align: left;
+
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    font-weight: normal;
+
+    color: #292426;
+}
+
+
+/* =========================
+   SETA
+========================= */
+
+.seta {
+    color: var(--vinho);
+
+    font-size: 24px;
+
+    transition: 0.3s;
+}
+
+.projeto:hover .seta {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    .projetos {
+        padding: 50px 20px 60px;
+    }
+
+    .projetos .titulo-pagina h1 {
+        font-size: 38px;
+    }
+
+    .projeto {
+        gap: 15px;
+
+        padding: 20px 15px;
+    }
+
+    .projeto h2 {
+        font-size: 17px;
+    }
+
+    .projeto:hover {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* =========================
+   PÁGINA CONTATO
+========================= */
+
+.contato {
+    max-width: 950px;
+
+    margin: auto;
+
+    padding: 70px 30px 90px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.contato .titulo-pagina {
+    margin-bottom: 55px;
+}
+
+.contato .titulo-pagina span {
+    color: var(--vinho);
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+.contato .titulo-pagina h1 {
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 48px;
+
+    margin-top: 12px;
+}
+
+.contato .linha-titulo {
+    width: 45px;
+
+    height: 3px;
+
+    background-color: var(--vinho);
+
+    margin: 18px auto;
+}
+
+.contato .titulo-pagina p {
+    max-width: 600px;
+
+    margin: 20px auto 0;
+
+    color: #666;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTATOS
+========================= */
+
+.contatos {
+    max-width: 750px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =========================
+   CARD DE CONTATO
+========================= */
+
+.contato-card {
+    min-height: 95px;
+
+    padding: 18px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    background-color: white;
+
+    border: 1px solid var(--borda);
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.contato-card:hover {
+    border-color: var(--vinho);
+
+    background-color: #faf7f5;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   ÍCONE
+========================= */
+
+.contato-icone {
+    width: 58px;
+
+    height: 58px;
+
+    min-width: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--vinho);
+
+    color: white;
+
+    font-size: 23px;
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.contato-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+    flex: 1;
+}
+
+.contato-info span {
+    color: var(--vinho);
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.contato-info strong {
+    color: #333;
+
+    font-size: 15px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   SETA
+========================= */
+
+.seta-contato {
+    color: var(--vinho);
+
+    font-size: 17px;
+
+    transition: 0.3s;
+}
+
+.contato-card:hover .seta-contato {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 600px) {
+
+    .contato {
+        padding: 50px 20px 60px;
+    }
+
+    .contato .titulo-pagina h1 {
+        font-size: 38px;
+    }
+
+    .contato-card {
+        padding: 15px;
+
+        gap: 15px;
+    }
+
+    .contato-icone {
+        width: 50px;
+
+        height: 50px;
+
+        min-width: 50px;
+
+        font-size: 20px;
+    }
+
+    .contato-info strong {
+        font-size: 13px;
+    }
+}
+
+/* =========================
+   MINHA ROTINA
+========================= */
+
+.rotina {
+    width: 100%;
+    margin-top: 75px;
+    padding-top: 55px;
+
+    border-top: 1px solid var(--borda);
+
+    text-align: center;
+}
+
+
+/* TÍTULO */
+
+.rotina-titulo {
+    margin-bottom: 40px;
+}
+
+.rotina-titulo span {
+    color: var(--vinho);
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+.rotina-titulo h2 {
+    margin-top: 12px;
+
+    font-family: Georgia, serif;
+
+    color: var(--vinho);
+
+    font-size: 38px;
+}
+
+.rotina-titulo .linha-titulo {
+    width: 50px;
+    height: 3px;
+
+    margin: 18px auto;
+
+    background-color: var(--vinho);
+}
+
+.rotina-titulo p {
+    margin: 20px auto 0;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   TABELA
+========================= */
+
+.tabela-rotina {
+    width: 100%;
+
+    margin: 0 auto;
+
+    overflow-x: visible;
+}
+
+.tabela-rotina table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    background-color: white;
+
+    border: 1px solid var(--borda);
+}
+
+
+/* CABEÇALHO */
+
+.tabela-rotina th {
+    height: 55px;
+
+    padding: 12px 8px;
+
+    background-color: var(--vinho);
+
+    color: white;
+
+    border: 1px solid white;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* CÉLULAS */
+
+.tabela-rotina td {
+    height: 42px;
+
+    padding: 8px 5px;
+
+    border: 1px solid #ddd;
+
+    color: #555;
+
+    font-size: 12px;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+
+/* COLUNA HORÁRIO */
+
+.tabela-rotina th:first-child {
+    width: 125px;
+}
+
+.tabela-rotina td:first-child {
+    width: 125px;
+
+    background-color: #faf7f5;
+
+    color: var(--vinho);
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+/* LINHAS ALTERNADAS */
+
+.tabela-rotina tbody tr:nth-child(even) td:not(:first-child) {
+    background-color: #fdfafa;
+}
+
+
+/* HOVER */
+
+.tabela-rotina tbody tr:hover td {
+    background-color: #f7eeee;
+}
+
+
+/* =========================
+   RESPONSIVIDADE PARA PC
+========================= */
+
+@media (min-width: 1200px) {
+
+    .sobre {
+        max-width: 1250px;
+    }
+
+    .sobre-texto {
+        max-width: 1100px;
+    }
+
+    .tabela-rotina td {
+        height: 45px;
+
+        font-size: 13px;
+    }
+
+    .tabela-rotina th {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+/* ========================================
+   PÁGINA ÁREAS
+======================================== */
+
+.areas {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 30px 90px;
+}
+
+
+/* ========================================
+   TÍTULO DA PÁGINA
+======================================== */
+
+.areas .titulo-pagina {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.areas .titulo-pagina span {
+    color: var(--vinho);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.areas .titulo-pagina h1 {
+    color: var(--vinho);
+    font-family: Georgia, serif;
+    font-size: 46px;
+    margin-top: 12px;
+}
+
+.areas .linha-titulo {
+    width: 50px;
+    height: 3px;
+    background-color: var(--vinho);
+    margin: 18px auto;
+}
+
+.areas .titulo-pagina p {
+    max-width: 650px;
+    margin: 20px auto;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   ÁREA
+======================================== */
+
+.area {
+    margin-bottom: 80px;
+}
+
+
+/* ========================================
+   CABEÇALHO DA ÁREA
+======================================== */
+
+.area-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 25px;
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid var(--borda);
+}
+
+.area-icone {
+    width: 60px;
+    height: 60px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--vinho);
+    color: white;
+
+    border-radius: 50%;
+
+    font-size: 22px;
+}
+
+.area-cabecalho span {
+    color: var(--vinho);
+
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.area-cabecalho h2 {
+    color: #292426;
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+    font-weight: normal;
+
+    margin-top: 5px;
+}
+
+
+/* ========================================
+   EIXOS
+======================================== */
+
+.eixos {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+/* ========================================
+   CARD DA ATIVIDADE
+======================================== */
+
+.eixo {
+    background-color: white;
+
+    border: 1px solid var(--borda);
+
+    padding: 20px;
+
+    text-align: left;
+
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.eixo:hover {
+    transform: translateY(-6px);
+
+    border-color: var(--vinho);
+
+    box-shadow:
+        0 10px 25px rgba(114, 0, 25, 0.10);
+}
+
+
+/* ========================================
+   NÚMERO DO EIXO
+======================================== */
+
+.numero-eixo {
+    display: block;
+
+    color: var(--vinho);
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   IMAGEM
+======================================== */
+
+.imagem-atividade {
+    width: 100%;
+    height: 155px;
+
+    overflow: hidden;
+
+    margin-bottom: 18px;
+
+    background-color: #f5f1f1;
+}
+
+.imagem-atividade img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+.eixo:hover .imagem-atividade img {
+    transform: scale(1.05);
+}
+
+
+/* ========================================
+   TÍTULO DA ATIVIDADE
+======================================== */
+
+.eixo h3 {
+    color: var(--vinho);
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+}
+
+
+/* ========================================
+   DESCRIÇÃO
+======================================== */
+
+.eixo p {
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   DETALHE INFERIOR
+======================================== */
+
+.eixo::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 3px;
+
+    background-color: var(--vinho);
+
+    transition: 0.3s;
+}
+
+.eixo:hover::after {
+    width: 45px;
+}
+
+/* ========================================
+   MODAL - IMAGEM AMPLIADA
+======================================== */
+
+.modal-imagem {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 9999;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(35, 20, 25, 0.90);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+
+}
+
+
+/* QUANDO O MODAL ESTÁ ABERTO */
+
+.modal-imagem.ativo {
+
+    display: flex;
+
+}
+
+
+/* IMAGEM AMPLIADA */
+
+.modal-imagem img {
+
+    max-width: 90%;
+
+    max-height: 85vh;
+
+    object-fit: contain;
+
+    border: 5px solid white;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+
+    animation: aparecerImagem 0.3s ease;
+
+}
+
+
+/* BOTÃO FECHAR */
+
+.fechar-modal {
+
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    background-color: white;
+
+    color: var(--vinho);
+
+    border-radius: 50%;
+
+    font-size: 30px;
+
+    line-height: 40px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.fechar-modal:hover {
+
+    background-color: var(--vinho);
+
+    color: white;
+
+    transform: rotate(90deg);
+
+}
+
+
+/* ANIMAÇÃO */
+
+@keyframes aparecerImagem {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(0.85);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* CURSOR NAS IMAGENS */
+
+.imagem-atividade img {
+
+    cursor: zoom-in;
+
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .eixos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .areas {
+        padding: 50px 20px 60px;
+    }
+
+    .areas .titulo-pagina h1 {
+        font-size: 36px;
+    }
+
+    .eixos {
+        grid-template-columns: 1fr;
+    }
+
+    .area-cabecalho h2 {
+        font-size: 25px;
+    }
+
+}
